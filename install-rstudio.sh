@@ -27,7 +27,7 @@ wget -O /tmp/rstudio-server-0.97.332-x86_64.rpm http://download2.rstudio.org/rst
 yum -y install -nogpgcheck /tmp/rstudio-server-0.97.332-x86_64.rpm
 
 # Run commands in R to install libs needed for RMR2 (?)
-R
+R CMD BATCH install_packages.r
 
 # Get rmr2
 wget -O /tmp/rmr2_2.1.0.tar.gz
