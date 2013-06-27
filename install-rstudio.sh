@@ -1,5 +1,7 @@
+# For now, assumes that RMR and R have been installed #
+
 # Uncomment line in yum.repos.d
-sed '/16/#/d' /etc/yum.repos.d/CentOS-Base.repo
+sed -i 's,#\(baseurl=http://mirror.centos.org/centos/$releasever/os/$basesearch/\),\1,g' /etc/yum.repos.d/CentOS-Base.repo
 
 # Update yum
 yum clean all
