@@ -30,8 +30,7 @@ yum -y install -nogpgcheck /tmp/rstudio-server-0.97.332-x86_64.rpm
 R CMD BATCH install_packages.r
 
 # Get rmr2
-wget -O /tmp/rmr2_2.1.0.tar.gz
-https://github.com/RevolutionAnalytics/rmr2/blob/master/build/rmr2_2.1.0.tar.gz
+wget -O /tmp/rmr2_2.1.0.tar.gz https://github.com/RevolutionAnalytics/rmr2/blob/master/build/rmr2_2.1.0.tar.gz
 
 # Install RMR2
 R CMD INSTALL /tmp/rmr2_2.1.0.tar.gz
