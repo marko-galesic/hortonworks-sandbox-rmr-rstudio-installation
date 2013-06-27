@@ -1,4 +1,9 @@
-# For now, assumes that RMR and R have been installed #
+# Most of this code is from Jim Solderitsch's Blog. 
+#I took and modified his code with the goal of being able to run this script on 
+#a machine that had already had R and RMR installed
+# url: http://jsolderitsch.wordpress.com/hortonworks-sandbox-r-and-rstudio-install/
+
+# For now, this script assumes that RMR and R have been installed #
 
 # Uncomment line in yum.repos.d
 sed -i 's,#\(baseurl=http://mirror.centos.org/centos/$releasever/os/$basesearch/\),\1,g' /etc/yum.repos.d/CentOS-Base.repo
